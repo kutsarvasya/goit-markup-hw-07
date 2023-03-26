@@ -289,7 +289,7 @@ transition: color var(--anim);
   }
 .hero-title{
     color: var(--white-color);
-    font-size: 40px;
+    font-size: 36px;
     letter-spacing: 0.02em;
     line-height: 1.1;
     width: 320px;
@@ -346,8 +346,13 @@ transition: color var(--anim);
     padding-top: 120px;
     padding-bottom: 120px;
   }
+  .feature.card-set-item.bg-card{
+    max-width: 264px;
+    margin: 0 auto;
+  }
  .feature {
      --items: 1;
+   
     
  }
  @media screen and (min-width: 768px) {
@@ -420,8 +425,8 @@ font-weight: 700;
 /* секция сотрудников */
 .container-team{
     
-   padding-left: 82px;
-   padding-right: 82px;
+   /* padding-left: 82px;
+   padding-right: 82px; */
 }
  @media screen and (min-width: 768px) {
     .container-team {
@@ -519,6 +524,7 @@ padding-top: 120px;
     
 --items: 2;
 --col-indent: 16px;
+justify-content: center;
 }
 @media screen and (min-width: 768px) {
     .customers {
@@ -933,8 +939,8 @@ box-shadow var(--anim), border-color var(--anim);
         z-index: 100;
 
        
-    
-        width: 392px;
+    min-width: 320px;
+        max-width: 392px;
         padding-bottom: 24px;
         padding-top: 72px;
         padding-left: 16px;
@@ -1149,6 +1155,7 @@ border: 1px solid #4D5AE5
     height: 100vh;
     padding-top: 80px;
     padding-left: 40px;
+    padding-right: 40px;
     padding-bottom: 40px;
     background-color: var(--white-color);
     z-index: 999;
@@ -1180,11 +1187,17 @@ font-weight: 700;
     color: var(--btn-bg-color);
 }
 .link-tel{
-    font-weight: 700;
-        font-size: 36px;
+    font-weight: 500;
+        font-size: 20px;
         line-height: 1.11;
         letter-spacing: 0.02em;
         color: var(--accent-color);
+}
+@media (min-width: 428px) {
+    .link-tel {
+        font-weight: 700;
+        font-size: 36px;
+    }
 }
 .link-mail{
     font-weight: 500;
@@ -1198,7 +1211,13 @@ flex-direction: column;
 gap: 40px;
 margin-bottom: 48px;
 }
+
 .mobile-socials {
     display: flex;
-    gap: 56px;
+    gap: 20px;
+}
+@media (min-width: 428px) {
+.mobile-socials {
+        gap: 56px;
+    }
 }
