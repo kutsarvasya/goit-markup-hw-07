@@ -46,6 +46,17 @@
               <a href="tel:+110001111111" class="link">+11(000)11-11-111</a>
             </li>
           </ul>
+          <div>
+            <button
+              class="menu-toggle js-open-menu"
+              aria-expanded="false"
+              aria-controls="mobile-menu"
+            >
+              <svg class="" width="32" height="22">
+                <use href="./images/icons.svg#burger"></use>
+              </svg>
+            </button>
+          </div>
         </nav>
       </div>
     </header>
@@ -61,51 +72,51 @@
       <section class="section-container">
         <div class="container">
           <h2 class="visually-hidden">Our features</h2>
-          <ul class="card-set">
-            <li class="feature card-set-item">
+          <ul class="feature card-set">
+            <li class="card-set-item">
               <div class="feature-card">
                 <svg class="" width="64" height="64">
                   <use href="./images/icons.svg#antenna"></use>
                 </svg>
               </div>
               <h3 class="subtitle">Strategy</h3>
-              <p class="subtitle-text">
+              <p class="subtitle-text-strategy">
                 Our goal is to identity the business problem to walk away with
                 the perfect and creative solution
               </p>
             </li>
-            <li class="feature card-set-item">
+            <li class="card-set-item">
               <div class="feature-card">
                 <svg class="" width="64" height="64">
                   <use href="./images/icons.svg#clock"></use>
                 </svg>
               </div>
               <h3 class="subtitle">Punctuality</h3>
-              <p class="subtitle-text">
+              <p class="subtitle-text-strategy">
                 Bring the key message to the brand's audience for the best price
                 within the shortest possible time
               </p>
             </li>
-            <li class="feature card-set-item">
+            <li class="card-set-item">
               <div class="feature-card">
                 <svg class="" width="64" height="64">
                   <use href="./images/icons.svg#diagram"></use>
                 </svg>
               </div>
               <h3 class="subtitle">Diligence</h3>
-              <p class="subtitle-text">
+              <p class="subtitle-text-strategy">
                 Research and confirm brands that present the strongest digital
                 growth opportunities and minimize risk
               </p>
             </li>
-            <li class="feature card-set-item">
+            <li class="card-set-item">
               <div class="feature-card">
                 <svg class="" width="64" height="64">
                   <use href="./images/icons.svg#astronaut"></use>
                 </svg>
               </div>
               <h3 class="subtitle">Technologies</h3>
-              <p class="subtitle-text">
+              <p class="subtitle-text-strategy">
                 Design practice focused on digital experiences. We bring forth a
                 deep passion for problem-solving
               </p>
@@ -113,13 +124,17 @@
           </ul>
         </div>
       </section>
-      <section class="section">
+      <section class="section display-none">
         <div class="container">
           <h2 class="section-title">What are we doing</h2>
           <ul class="card-set">
             <li class="card-set-item">
               <img
-                src="./images/monitor.jpg"
+                srcset="
+                  ./images/we-do/img-1@1x.jpg 1x,
+                  ./images/we-do/img-1@2x.jpg 2x
+                "
+                src="./images/we-do/img-1@1x.jpg"
                 alt="open app monitor"
                 width="360"
                 height="300"
@@ -127,7 +142,11 @@
             </li>
             <li class="card-set-item">
               <img
-                src="./images/mobile.jpg"
+                srcset="
+                  ./images/we-do/img-2@1x.jpg 1x,
+                  ./images/we-do/img-2@2x.jpg 2x
+                "
+                src="./images/we-do/img-2@1x.jpg"
                 alt="mobile phone with chat app"
                 width="360"
                 height="300"
@@ -135,7 +154,11 @@
             </li>
             <li class="card-set-item">
               <img
-                src="./images/synchronization.jpg"
+                srcset="
+                  ./images/we-do/img-3@1x.jpg 1x,
+                  ./images/we-do/img-3@2x.jpg 2x
+                "
+                src="./images/we-do/img-3@1x.jpg"
                 alt="mobile phone and computer monitor"
                 width="360"
                 height="300"
@@ -145,12 +168,16 @@
         </div>
       </section>
       <section class="section section-bg-color">
-        <div class="container">
+        <div class="container container-team">
           <h2 class="section-title">Our Team</h2>
           <ul class="card-set">
             <li class="feature card-set-item bg-card">
               <img
-                src="./images/guerrero.jpg"
+                srcset="
+                  ./images/team/img-1@1x.jpg 1x,
+                  ./images/team/img-1@2x.jpg 2x
+                "
+                src="./images/team/img-1@1x.jpg"
                 alt="photo of a man Mark Guerrero"
                 width="264"
                 height="260"
@@ -214,7 +241,11 @@
             </li>
             <li class="feature card-set-item bg-card">
               <img
-                src="./images/ford.jpg"
+                srcset="
+                  ./images/team/img-2@1x.jpg 1x,
+                  ./images/team/img-2@2x.jpg 2x
+                "
+                src="./images/team/img-2@1x.jpg"
                 alt="photo of a man Tom Ford"
                 width="264"
                 height="260"
@@ -278,7 +309,11 @@
             </li>
             <li class="feature card-set-item bg-card">
               <img
-                src="./images/garcia.jpg"
+                srcset="
+                  ./images/team/img-3@1x.jpg 1x,
+                  ./images/team/img-3@2x.jpg 2x
+                "
+                src="./images/team/img-3@1x.jpg"
                 alt="photo of a woman Camila Garcia"
                 width="264"
                 height="260"
@@ -340,7 +375,11 @@
             </li>
             <li class="feature card-set-item bg-card">
               <img
-                src="./images/wilson.jpg"
+                srcset="
+                  ./images/team/img-4@1x.jpg 1x,
+                  ./images/team/img-4@2x.jpg 2x
+                "
+                src="./images/team/img-4@1x.jpg"
                 alt="photo of a man Daniel Wilson"
                 width="264"
                 height="260"
@@ -404,40 +443,40 @@
         </div>
       </section>
       <section class="section-container">
-        <div class="container">
+        <div class="container customers-container">
           <h2 class="section-title">Customers</h2>
-          <ul class="customers-list">
-            <li class="customers-item">
+          <ul class="card-set customers">
+            <li class="card-set-item">
               <a href="" class="customers-link"
                 ><svg class="" width="104" height="56">
                   <use href="./images/icons.svg#logo-1"></use></svg
               ></a>
             </li>
-            <li class="customers-item">
+            <li class="card-set-item">
               <a href="" class="customers-link"
                 ><svg class="" width="104" height="56">
                   <use href="./images/icons.svg#logo-2"></use></svg
               ></a>
             </li>
-            <li class="customers-item">
+            <li class="card-set-item">
               <a href="" class="customers-link"
                 ><svg class="" width="104" height="56">
                   <use href="./images/icons.svg#logo-3"></use></svg
               ></a>
             </li>
-            <li class="customers-item">
+            <li class="card-set-item">
               <a href="" class="customers-link"
                 ><svg class="" width="104" height="56">
                   <use href="./images/icons.svg#logo-4"></use></svg
               ></a>
             </li>
-            <li class="customers-item">
+            <li class="card-set-item">
               <a href="" class="customers-link"
                 ><svg class="" width="104" height="56">
                   <use href="./images/icons.svg#logo-5"></use></svg
               ></a>
             </li>
-            <li class="customers-item">
+            <li class="card-set-item">
               <a href="" class="customers-link"
                 ><svg class="" width="104" height="56">
                   <use href="./images/icons.svg#logo-6"></use></svg
@@ -448,68 +487,70 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="container footer-container">
-        <div class="logo-footer-container">
-          <a href="./index.html" class="logo-footer"
-            ><span class="logo-span">Web</span>Studio</a
-          >
-          <p class="text-footer">
-            Increase the flow of customers and sales for your business with
-            digital marketing & growth solutions
-          </p>
-        </div>
-        <div class="social-footer-container">
-          <p class="footer-title">Social media</p>
-          <ul class="socials-footer">
-            <li class="socials-item">
-              <a
-                class="socials-link icon-footer"
-                href=""
-                target="_blank"
-                rel="noreferrer noopener"
-              >
-                <svg class="" width="24" height="24">
-                  <use href="./images/icons.svg#instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="socials-item">
-              <a
-                class="socials-link icon-footer"
-                href=""
-                target="_blank"
-                rel="noreferrer noopener"
-              >
-                <svg class="" width="24" height="24">
-                  <use href="./images/icons.svg#twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="socials-item">
-              <a
-                class="socials-link icon-footer"
-                href=""
-                target="_blank"
-                rel="noreferrer noopener"
-              >
-                <svg class="" width="24" height="24">
-                  <use href="./images/icons.svg#facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="socials-item">
-              <a
-                class="socials-link icon-footer"
-                href=""
-                target="_blank"
-                rel="noreferrer noopener"
-              >
-                <svg class="" width="24" height="24">
-                  <use href="./images/icons.svg#linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+      <div class="container footer-container customers-container">
+        <div class="footer-pos">
+          <div class="logo-footer-container">
+            <a href="./index.html" class="logo-footer"
+              ><span class="logo-span">Web</span>Studio</a
+            >
+            <p class="text-footer">
+              Increase the flow of customers and sales for your business with
+              digital marketing & growth solutions
+            </p>
+          </div>
+          <div class="social-footer-container">
+            <p class="footer-title">Social media</p>
+            <ul class="socials-footer">
+              <li class="socials-item">
+                <a
+                  class="socials-link icon-footer"
+                  href=""
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
+                  <svg class="" width="24" height="24">
+                    <use href="./images/icons.svg#instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials-item">
+                <a
+                  class="socials-link icon-footer"
+                  href=""
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
+                  <svg class="" width="24" height="24">
+                    <use href="./images/icons.svg#twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials-item">
+                <a
+                  class="socials-link icon-footer"
+                  href=""
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
+                  <svg class="" width="24" height="24">
+                    <use href="./images/icons.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials-item">
+                <a
+                  class="socials-link icon-footer"
+                  href=""
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
+                  <svg class="" width="24" height="24">
+                    <use href="./images/icons.svg#linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
         <div class="footer-form-style">
           <p class="footer-title">Subscribe</p>
@@ -606,6 +647,87 @@
         </form>
       </div>
     </div>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle-close js-close-menu">
+        <svg class="" width="8" height="8">
+          <use href="./images/icons.svg#close"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu">
+        <li><a href="./index.html" class="link active">Studio</a></li>
+        <li><a href="./portfolio.html" class="link">Portfolio</a></li>
+        <li><a href="" class="link">Contacts</a></li>
+      </ul>
+      <ul class="mobile-contacts">
+        <li class="">
+          <a href="tel:+110001111111" class="link-tel">+11(000)11-11-111</a>
+        </li>
+        <li class="">
+          <a href="mailto:info@dewstudio.com" class="link-mail"
+            >info@dewstudio.com</a
+          >
+        </li>
+      </ul>
+      <ul class="mobile-socials">
+        <li class="socials-item">
+          <a
+            class="socials-link icon"
+            href=""
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <svg class="" width="16" height="16">
+              <use href="./images/icons.svg#instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="socials-item">
+          <a
+            class="socials-link icon"
+            href=""
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <svg class="" width="16" height="16">
+              <use href="./images/icons.svg#twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="socials-item">
+          <a
+            class="socials-link icon"
+            href=""
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <svg class="" width="16" height="16">
+              <use href="./images/icons.svg#facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="socials-item">
+          <a
+            class="socials-link icon"
+            href=""
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <svg class="" width="16" height="16">
+              <use href="./images/icons.svg#linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+
     <script src="./js/modal.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>
