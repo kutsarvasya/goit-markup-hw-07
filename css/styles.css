@@ -63,6 +63,7 @@ a {
 /* дублирующие классы */
 .container{
        position: relative;
+    min-width: 320px;
         max-width: 428px;
         padding-left: 16px;
         padding-right: 16px;
@@ -289,10 +290,10 @@ transition: color var(--anim);
   }
 .hero-title{
     color: var(--white-color);
-    font-size: 36px;
+    font-size: 30px;
     letter-spacing: 0.02em;
     line-height: 1.1;
-    width: 320px;
+    width: 288px;
   
     margin:0 auto;
     margin-bottom: 72px;
@@ -939,7 +940,7 @@ box-shadow var(--anim), border-color var(--anim);
         z-index: 100;
 
        
-    min-width: 320px;
+    min-width: 288px;
         max-width: 392px;
         padding-bottom: 24px;
         padding-top: 72px;
@@ -1078,6 +1079,9 @@ border: 1px solid #4D5AE5
     opacity: 0;
     transition: opacity var(--anim);
 
+}
+.modal-form-custom-checkbox{
+flex-shrink: 0;
 }
 .modal-form-checkbox:checked + .modal-form-custom-checkbox >
  .checked{
